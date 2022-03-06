@@ -104,6 +104,8 @@ Header {
   padding: 5px;
   width: 20rem;
   margin-top: 1rem;
+  letter-spacing: 2px;
+  cursor: pointer;
 }
 
 input {

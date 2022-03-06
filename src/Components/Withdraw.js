@@ -22,7 +22,7 @@ class Withdraw extends Component {
                 <form action='#'> 
                     <h2 className='heading-deposite'> Withdraw </h2>
                     <input placeholder='Enter Amount' type="text" ref={this.inputRef} /> <br />
-                    <button onClick={this.updateAmount}> withdraw 1000 Rs </button>
+                    <button onClick={this.updateAmount}> withdraw Money </button>
                     </form>
                 </div>
             </>

@@ -22,7 +22,7 @@ class Deposite extends Component {
                     <form action='#'>
                         <input placeholder='Enter Amount' type="text" ref={this.inputRef} /> <br />
                         {/* <button onClick={this.props.deposite}> Add 1000 Rs </button> */}
-                        <button onClick={this.updateAmount}> Add 1000 Rs </button>
+                        <button onClick={this.updateAmount}> Add Money </button>
                     </form>
                 </div>
             </>
