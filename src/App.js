@@ -31,7 +31,7 @@ class App extends Component {
 	
 	withdrawMoney = (newVal) => {
 		if(this.state.balance < newVal) {
-			alert("You have 0 Balance in your account")
+			alert("Please insert correct amount")
 		}
 		else if(isNaN(newVal) != true) {
 			this.setState({
