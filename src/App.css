@@ -1,38 +1,115 @@
-.App {
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+
+Header {
+  height: 20vh;
+  width: 100vw;
+  background-image:linear-gradient(rgba(0, 0, 0, 0.541), rgba(0, 0, 0, 0.432)),url("https://www.uobgroup.com/web-resources/in/images/carousel/products-services/corporate-banking/corporate-banking-1180x332.jpg");
+  display: flex;
+  padding: 1rem;
+}
+
+.bank-name {
+  color : #FFFFFF
+}
+
+.balance-btn {
+  font-size: 1.5rem;
+  padding: 10px 2rem;
+  background-color: rgb(14, 203, 250);
+  color: black;
+  border: none;
+  outline: none;
+  letter-spacing: 2px;
+}
+
+.left-header {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  letter-spacing: 2px;
+}
+
+.right-header {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* **********************************************Tabs************************************* */
+.tab-container {
+  display: flex;
+  gap: 3vw;
+  justify-content: center;
+  margin-top: 5px;
+  margin-bottom: 3rem;
+}
+
+.tab {
+  width: 10rem;
+  padding: 5px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  letter-spacing: 2px;
+  border-radius : 5px
+}
+
+.tab:hover {
+  background-color: rgb(1, 125, 134);
+  color: #FFFFFF;
+}
+.tab:active {
+  transform: scale(1.1);
+}
+
+
+/* ************************************** Home ********************************************* */
+.home {
+  height: 65vh;
+  width: 90vw;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px grey;
+}
+
+.home-para {
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+
+/* **************************** Deposite ************************************* */
+
+.deposite-container {
+  height: 65vh;
+  width: 90vw;
+  margin: auto;
+  padding: 1rem;
+  box-shadow: 0px 0px 2px grey;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.deposite-container > h2 {
+  letter-spacing: 2px;
+  opacity: 80%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.deposite-container >form  button {
+  padding: 5px;
+  width: 20rem;
+  margin-top: 1rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+
+
+
+
