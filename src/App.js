@@ -12,28 +12,35 @@ class App extends Component {
 		super(props)
 		this.state = {
 			tab : "home",
-			balance : 5000
+			balance : 5000,
+			// amount : 0,
 		}
 	}
 
-	depositeMoney = () => {
-		this.setState({
-			balance : this.state.balance + 1000,
-		})
-	}
-	
-	withdrawMoney = () => {
-		if(this.state.balance > 0) {
+	depositeMoney = (newVal) => {
+		if(isNaN(newVal) != true) {
 			this.setState({
-				balance : this.state.balance - 1000,
+				balance : this.state.balance + newVal
 			})
 		}
-
-		else {
-			alert("Please Deposite Some Money in Your bank Account")
+		else{
+			alert("please enter correct amount")
 		}
+	}
 
-		
+	
+	withdrawMoney = (newVal) => {
+		if(this.state.balance < newVal) {
+			alert("You have 0 Balance in your account")
+		}
+		else if(isNaN(newVal) != true) {
+			this.setState({
+				balance : this.state.balance - newVal
+			})
+		}
+		else {
+			alert("Please insert correct amount")
+		}
 	}
 
 	changeTab = (newTab) => {
@@ -45,7 +52,7 @@ class App extends Component {
 	renderTab = () => {
 		switch(this.state.tab) {
 			case 'home':
-				return <Home  />
+				return <Home  /> 
 			case 'deposite':
 				return <Deposite deposite={this.depositeMoney} />
 			case 'withdraw':

@@ -106,6 +106,16 @@ Header {
   margin-top: 1rem;
 }
 
+input {
+  padding: 5px;
+  width: 15rem;
+  font-size: 1.2rem;
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  box-shadow: 0px 0px 1px grey;
+}
+
 
 
 
